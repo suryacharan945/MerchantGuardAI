@@ -1,0 +1,7 @@
+{
+  "step": "12_investigation_summary_and_merchant_comms",
+  "timestamp": "2026-09-03 12:42",
+  "investigation_report_path": "/content/drive/MyDrive/MerchantGuardAI/reports/sample_investigation_report.md",
+  "comms_templates_path": "/content/drive/MyDrive/MerchantGuardAI/reports/merchant_comms_templates.json",
+  "tested_action_type": "BLOCK"
+}

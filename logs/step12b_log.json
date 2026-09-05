@@ -1,0 +1,9 @@
+{
+  "step": "12b_drift_alert_fix_and_circular_limitation",
+  "timestamp": "2026-08-24 21:14",
+  "bug_1": "Alert rule required 2+ drifted features, silently missing a severe single-feature shift (amount, p=0.00003). Fixed with a dual condition: strong single-feature evidence (p<0.001) OR multiple corroborating features (2+, p<0.05).",
+  "limitation_1": "KS test on 'hour' cannot detect a circular/modular shift (+6h wraparound) because a uniform distribution shifted circularly remains uniform in marginal terms \u2014 confirmed via direct inspection, not a bug in the detector. Would need a circular-statistics test to catch this specific failure mode.",
+  "stable_batch_alert": false,
+  "drifted_batch_alert": true,
+  "fix_confirmed": true
+}

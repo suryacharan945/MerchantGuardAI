@@ -1,0 +1,272 @@
+[
+  {
+    "test_index": 58,
+    "top_features": [
+      [
+        "ip_country_code",
+        4.245700303626323
+      ],
+      [
+        "payment_method_code",
+        1.6959121051315695
+      ],
+      [
+        "amount",
+        0.5432266548218788
+      ],
+      [
+        "ip_country_mismatch",
+        0.32396132649540943
+      ],
+      [
+        "time_since_last_tx_min",
+        0.1479584288054524
+      ]
+    ],
+    "explanation": "Transaction country differs from typical merchant traffic. Payment method pattern is atypical for this context. amount contributed to the risk score.",
+    "risk_score": 0.8050797325257472
+  },
+  {
+    "test_index": 110,
+    "top_features": [
+      [
+        "ip_country_code",
+        4.010991103111245
+      ],
+      [
+        "amount",
+        1.9174373796667223
+      ],
+      [
+        "payment_method_code",
+        1.8407751435870239
+      ],
+      [
+        "hour",
+        0.2588866546097857
+      ],
+      [
+        "avg_amount_30d",
+        -0.1217236854536739
+      ]
+    ],
+    "explanation": "Transaction country differs from typical merchant traffic. amount contributed to the risk score. Payment method pattern is atypical for this context.",
+    "risk_score": 0.9018301457441539
+  },
+  {
+    "test_index": 162,
+    "top_features": [
+      [
+        "ip_country_code",
+        4.0159657719673065
+      ],
+      [
+        "amount",
+        1.9184800275132285
+      ],
+      [
+        "payment_method_code",
+        1.8481472266129289
+      ],
+      [
+        "hour",
+        0.24482569793025868
+      ],
+      [
+        "avg_amount_30d",
+        -0.11956428603778911
+      ]
+    ],
+    "explanation": "Transaction country differs from typical merchant traffic. amount contributed to the risk score. Payment method pattern is atypical for this context.",
+    "risk_score": 0.9018301457441539
+  },
+  {
+    "test_index": 258,
+    "top_features": [
+      [
+        "ip_country_code",
+        4.124197864223152
+      ],
+      [
+        "payment_method_code",
+        1.8866868169640352
+      ],
+      [
+        "amount",
+        1.1928358220929516
+      ],
+      [
+        "avg_amount_30d",
+        0.7108436293515624
+      ],
+      [
+        "day_of_week",
+        -0.12691848272860753
+      ]
+    ],
+    "explanation": "Transaction country differs from typical merchant traffic. Payment method pattern is atypical for this context. amount contributed to the risk score.",
+    "risk_score": 0.9032442070573061
+  },
+  {
+    "test_index": 393,
+    "top_features": [
+      [
+        "ip_country_code",
+        4.0199651922389235
+      ],
+      [
+        "payment_method_code",
+        1.7715732635614256
+      ],
+      [
+        "ip_country_mismatch",
+        1.166250174699165
+      ],
+      [
+        "time_since_last_tx_min",
+        0.35188519591438644
+      ],
+      [
+        "hour",
+        0.23143779468762393
+      ]
+    ],
+    "explanation": "Transaction country differs from typical merchant traffic. Payment method pattern is atypical for this context. Transaction originates from an unrecognized country for this user.",
+    "risk_score": 0.8965591727670682
+  },
+  {
+    "test_index": 474,
+    "top_features": [
+      [
+        "payment_method_code",
+        2.6100045528347007
+      ],
+      [
+        "amount",
+        2.117821177591189
+      ],
+      [
+        "avg_amount_30d",
+        0.8589619297401121
+      ],
+      [
+        "merchant_category_code",
+        0.6787760294477361
+      ],
+      [
+        "ip_country_mismatch",
+        0.18157125631057433
+      ]
+    ],
+    "explanation": "Payment method pattern is atypical for this context. amount contributed to the risk score. avg amount 30d contributed to the risk score.",
+    "risk_score": 0.7388244221100622
+  },
+  {
+    "test_index": 662,
+    "top_features": [
+      [
+        "ip_country_code",
+        4.124292609900628
+      ],
+      [
+        "payment_method_code",
+        1.8832937011362536
+      ],
+      [
+        "amount",
+        1.5193484937639254
+      ],
+      [
+        "hour",
+        0.26274633732372377
+      ],
+      [
+        "ip_country_mismatch",
+        -0.08112899569623272
+      ]
+    ],
+    "explanation": "Transaction country differs from typical merchant traffic. Payment method pattern is atypical for this context. amount contributed to the risk score.",
+    "risk_score": 0.9018236406488124
+  },
+  {
+    "test_index": 942,
+    "top_features": [
+      [
+        "ip_country_code",
+        4.010281168732247
+      ],
+      [
+        "amount",
+        1.9155351229390458
+      ],
+      [
+        "payment_method_code",
+        1.8388300814834602
+      ],
+      [
+        "hour",
+        0.24330051535096472
+      ],
+      [
+        "avg_amount_30d",
+        -0.12294048588712567
+      ]
+    ],
+    "explanation": "Transaction country differs from typical merchant traffic. amount contributed to the risk score. Payment method pattern is atypical for this context.",
+    "risk_score": 0.9018301457441539
+  },
+  {
+    "test_index": 952,
+    "top_features": [
+      [
+        "ip_country_code",
+        3.5561433102336113
+      ],
+      [
+        "payment_method_code",
+        1.5794397026411846
+      ],
+      [
+        "avg_amount_30d",
+        1.5320203201464893
+      ],
+      [
+        "amount",
+        1.3314331610510368
+      ],
+      [
+        "hour",
+        0.1801939112325986
+      ]
+    ],
+    "explanation": "Transaction country differs from typical merchant traffic. Payment method pattern is atypical for this context. avg amount 30d contributed to the risk score.",
+    "risk_score": 0.9031913845201917
+  },
+  {
+    "test_index": 1115,
+    "top_features": [
+      [
+        "ip_country_code",
+        4.170073671740577
+      ],
+      [
+        "payment_method_code",
+        1.9215627729032736
+      ],
+      [
+        "amount",
+        1.5200753260921473
+      ],
+      [
+        "hour",
+        0.266897189692023
+      ],
+      [
+        "ip_country_mismatch",
+        -0.07415573941357691
+      ]
+    ],
+    "explanation": "Transaction country differs from typical merchant traffic. Payment method pattern is atypical for this context. amount contributed to the risk score.",
+    "risk_score": 0.9018236406488124
+  }
+]

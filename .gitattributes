@@ -1,0 +1,4 @@
+models/*.index filter=lfs diff=lfs merge=lfs -text
+data/raw/ieee_cis/*.csv filter=lfs diff=lfs merge=lfs -text
+data/raw/paysim/*.csv filter=lfs diff=lfs merge=lfs -text
+models/*.pth filter=lfs diff=lfs merge=lfs -text

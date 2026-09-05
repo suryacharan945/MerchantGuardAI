@@ -1,0 +1,9 @@
+metric,value
+Evaluated Transactions,110
+Generator Mode,offline_fallback
+Mean Pipeline Latency,16.25 ms
+P95 Pipeline Latency,25.67 ms
+Retrieval Latency (Mean),16.02 ms
+Generation Latency (Mean),0.08 ms
+JSON Schema Integrity,100.0%
+Policy Adherence Rate,100.0%

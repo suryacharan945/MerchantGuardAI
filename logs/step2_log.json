@@ -1,0 +1,10 @@
+{
+  "step": "02_preprocessing_feature_engineering",
+  "timestamp": "2026-08-24 20:13",
+  "decision": "Regenerated synthetic data (v1 had ~1 fraud row in 6835 \u2014 unusable). v2 injects 4 explicit fraud types at ~2% target rate.",
+  "primary_dataset_for_demo": "synthetic_v2 (interpretable columns for SHAP + merchant-friendly text)",
+  "secondary_datasets": "IEEE-CIS (full), PaySim (sampled to 100k legit + all fraud)",
+  "synthetic_v2_fraud_rate": 0.01871345029239766,
+  "train_rows": 5472,
+  "test_rows": 1368
+}

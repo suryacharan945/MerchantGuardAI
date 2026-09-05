@@ -1,0 +1,9 @@
+{
+  "step": "08e_notebook_leakage_audit",
+  "timestamp": "2026-09-02 14:51",
+  "problem": "Notebook cells 15, 16, and 19 (added separately from the main pipeline) evaluate the ensemble on df_full (all 6990 rows, train+test combined) instead of the held-out test split. This produces inflated metrics that CONTRADICT the canonical, honestly test-evaluated numbers in cell 27 / Step 8d (AUROC 0.9345).",
+  "leaky_auroc": 0.9846767466110532,
+  "clean_test_auroc": 0.9344629822732012,
+  "inflation_points": 5.021376433785196,
+  "action": "Cells 15, 16, 19 should be deleted from the final notebook before submission, or clearly marked 'SUPERSEDED \u2014 see cell 27 for correct test-only numbers' if kept for the debugging narrative. Only cell 27's numbers, matching Step 8d, should appear in the README/pitch."
+}

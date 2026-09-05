@@ -1,0 +1,25 @@
+{
+  "step": "08i_calibration_reliability_check",
+  "timestamp": "2026-09-02 20:01",
+  "brier_score": 0.01710056877436935,
+  "naive_brier_score": 0.019627466992494895,
+  "beats_naive_baseline": true,
+  "reliability_bins": {
+    "predicted": [
+      0.0025024681859791543,
+      0.00262227555538702,
+      0.0028555954910865476,
+      0.0036305815421526777,
+      0.16807049255526393
+    ],
+    "observed": [
+      0.0,
+      0.0,
+      0.007142857142857143,
+      0.0035842293906810036,
+      0.08928571428571429
+    ]
+  },
+  "max_calibration_deviation": 0.07878477826954965,
+  "note": "Brier score 0.0171 (vs 0.0196 naive baseline) confirms the calibrated scores carry real probabilistic information, not just rank order. The reliability diagram shows reasonable alignment with the diagonal, though with only 28 fraud cases across 5 bins, each point represents very few examples \u2014 treat bin-level precision as directional, consistent with every other small-sample caveat already documented for this test set."
+}

@@ -1,0 +1,1 @@
+["amount", "hour", "day_of_week", "is_off_hours", "prev_tx_count_24h", "avg_amount_30d", "time_since_last_tx_min", "user_device_nunique", "amount_vs_avg_ratio", "ip_country_mismatch", "payment_method_code", "ip_country_code", "merchant_id_code", "merchant_category_code"]

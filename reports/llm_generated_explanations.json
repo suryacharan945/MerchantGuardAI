@@ -1,0 +1,62 @@
+[
+  {
+    "explanation": "Flagged as risk probability reached 10.2%: spend is 1.0x typical customer baseline (INR 1,033); spend is 1.0x typical customer baseline (INR 1,033).",
+    "recommended_action": "BLOCK",
+    "action_reason": "Aligned with SOP-CT-002 (Card Testing & Velocity Abuse Remediation) given calibrated risk.",
+    "policy_doc_id": "SOP-CT-002",
+    "generation_mode": "offline_fallback",
+    "tx_id": "b81a6b31-89b4-4077-b980-7e5d63df9c75",
+    "amount": 1033,
+    "actual_is_fraud": 1,
+    "calibrated_score": 0.1022617358944024,
+    "latency_ms": 0.06
+  },
+  {
+    "explanation": "Flagged as risk probability reached 98.7%: spend is 1.0x typical customer baseline (INR 56); spend is 1.0x typical customer baseline (INR 56).",
+    "recommended_action": "BLOCK",
+    "action_reason": "Aligned with SOP-CT-002 (Card Testing & Velocity Abuse Remediation) given calibrated risk.",
+    "policy_doc_id": "SOP-CT-002",
+    "generation_mode": "offline_fallback",
+    "tx_id": "d3fcfe1f-d5f6-4330-bdf8-8066ea9bcc6e",
+    "amount": 56,
+    "actual_is_fraud": 1,
+    "calibrated_score": 0.9874489388607796,
+    "latency_ms": 0.06
+  },
+  {
+    "explanation": "Flagged as risk probability reached 99.0%: spend is 1.0x typical customer baseline (INR 2,319); spend is 1.0x typical customer baseline (INR 2,319).",
+    "recommended_action": "BLOCK",
+    "action_reason": "Aligned with SOP-CT-002 (Card Testing & Velocity Abuse Remediation) given calibrated risk.",
+    "policy_doc_id": "SOP-CT-002",
+    "generation_mode": "offline_fallback",
+    "tx_id": "7d7c3c77-bf1f-4222-9cca-0ca57cdbb41c",
+    "amount": 2319,
+    "actual_is_fraud": 1,
+    "calibrated_score": 0.9895958190423506,
+    "latency_ms": 0.08
+  },
+  {
+    "explanation": "Flagged as risk probability reached 14.3%: spend is 1.0x typical customer baseline (INR 360); spend is 1.0x typical customer baseline (INR 360).",
+    "recommended_action": "BLOCK",
+    "action_reason": "Aligned with SOP-CT-002 (Card Testing & Velocity Abuse Remediation) given calibrated risk.",
+    "policy_doc_id": "SOP-CT-002",
+    "generation_mode": "offline_fallback",
+    "tx_id": "4046fea9-619d-4b0f-af5b-779aec89ff81",
+    "amount": 360,
+    "actual_is_fraud": 1,
+    "calibrated_score": 0.1432581784799242,
+    "latency_ms": 0.06
+  },
+  {
+    "explanation": "Flagged as risk probability reached 98.8%: spend is 1.0x typical customer baseline (INR 44); spend is 1.0x typical customer baseline (INR 44).",
+    "recommended_action": "BLOCK",
+    "action_reason": "Aligned with SOP-CT-002 (Card Testing & Velocity Abuse Remediation) given calibrated risk.",
+    "policy_doc_id": "SOP-CT-002",
+    "generation_mode": "offline_fallback",
+    "tx_id": "2ee72b1b-7039-41ae-8ac8-970a6a1eb351",
+    "amount": 44,
+    "actual_is_fraud": 1,
+    "calibrated_score": 0.9878104593672684,
+    "latency_ms": 0.06
+  }
+]

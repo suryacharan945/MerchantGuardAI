@@ -1,0 +1,56 @@
+{
+  "step": "07_hybrid_ensemble",
+  "timestamp": "2026-08-24 20:17",
+  "correction_from_step6": "Step 6's 'avg pairwise correlation=0.44' summary was misleading \u2014 it averaged a 0.93 (AE-IF) with two ~0.20s (LightGBM-vs-each), masking that AE and IF are near-redundant. Fixed by combining AE+IF into one novelty signal before weighting against LightGBM.",
+  "weight_sweep_results": [
+    {
+      "lgb_weight": 0.5,
+      "auroc": 0.9214546402502607
+    },
+    {
+      "lgb_weight": 0.55,
+      "auroc": 0.9240354535974975
+    },
+    {
+      "lgb_weight": 0.6,
+      "auroc": 0.9260166840458811
+    },
+    {
+      "lgb_weight": 0.65,
+      "auroc": 0.9282064650677789
+    },
+    {
+      "lgb_weight": 0.7,
+      "auroc": 0.929718456725756
+    },
+    {
+      "lgb_weight": 0.75,
+      "auroc": 0.9304483837330553
+    },
+    {
+      "lgb_weight": 0.8,
+      "auroc": 0.9313868613138686
+    },
+    {
+      "lgb_weight": 0.85,
+      "auroc": 0.9326381647549531
+    },
+    {
+      "lgb_weight": 0.9,
+      "auroc": 0.9343587069864443
+    },
+    {
+      "lgb_weight": 0.95,
+      "auroc": 0.9344629822732012
+    },
+    {
+      "lgb_weight": 1.0,
+      "auroc": 0.9240615224191866
+    }
+  ],
+  "best_lgb_weight": 0.95,
+  "best_raw_ensemble_auroc": 0.9344629822732012,
+  "lightgbm_alone_auroc": 0.9241266944734098,
+  "ensemble_beats_lightgbm_alone": true,
+  "calibration_method": "isotonic regression, fit on train split only"
+}

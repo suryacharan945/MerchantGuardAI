@@ -1,0 +1,7 @@
+{
+  "step": "10b_faiss_fix",
+  "timestamp": "2026-08-24 21:09",
+  "fix_1": "Replaced linear similarity formula (clipped to 0 for outlier distances) with bounded exponential decay \u2014 high-amount matches were already correct, just displaying as 0%.",
+  "fix_2": "Switched to a curated 8-feature similarity space (dropped hour/day_of_week/categorical codes) to reduce noise from features unrelated to fraud-pattern identity.",
+  "known_limitation": "Card-testing fraud (6-row bursts on one device, \u20b91-20 each) remains hard to cluster reliably even after the fix \u2014 the burst is only ~4% of all fraud cases (36/140), too sparse for FAISS to form a tight neighborhood. Documented as a data-density limitation, not re-patched further given this is a stretch feature."
+}

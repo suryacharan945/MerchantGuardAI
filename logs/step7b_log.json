@@ -1,0 +1,14 @@
+{
+  "step": "07b_calibration_fix",
+  "timestamp": "2026-08-24 20:17",
+  "problem": "Isotonic regression calibration dropped AUROC from 0.9345 to 0.8457 \u2014 impossible for a correct monotonic transform. Root cause: isotonic step function fit on only 112 train-fraud rows produced coarse plateaus, collapsing distinct raw scores into tied calibrated values.",
+  "diagnostic": {
+    "n_unique_raw_test_scores": 1398,
+    "n_unique_isotonic_calibrated_scores": 14
+  },
+  "fix": "Replaced isotonic regression with Platt scaling (logistic regression on the single ensemble-score feature). Strictly monotonic by construction, so AUROC is mathematically guaranteed to be preserved after calibration.",
+  "raw_auroc": 0.9344629822732012,
+  "isotonic_calibrated_auroc_buggy": 0.8457116788321168,
+  "platt_calibrated_auroc_fixed": 0.9344629822732012,
+  "fix_confirmed": true
+}

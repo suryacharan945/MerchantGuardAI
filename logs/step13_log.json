@@ -1,0 +1,11 @@
+{
+  "step": "13_end_to_end_benchmarking_and_audit",
+  "timestamp": "2026-09-03 12:43",
+  "total_evaluated": 110,
+  "mean_latency_ms": 16.25,
+  "p95_latency_ms": 25.67,
+  "json_success_rate_pct": 100.0,
+  "policy_adherence_rate_pct": 100.0,
+  "audit_log_path": "/content/drive/MyDrive/MerchantGuardAI/reports/final_rag_audit_log.csv",
+  "metrics_path": "/content/drive/MyDrive/MerchantGuardAI/reports/rag_evaluation_metrics.csv"
+}

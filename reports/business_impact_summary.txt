@@ -1,0 +1,9 @@
+MerchantGuard AI flags 75% of fraudulent transactions for intervention, while requiring action on only 5.0% of legitimate transactions, using a severity-based policy engine alone. On a base of 100,000 transactions at this fraud rate, this is estimated to prevent ~₹3,785,837 in fraud losses against ~₹265,236 in false-positive friction — a net estimated benefit of ~₹3,520,601.
+
+Known limitation: 7 of 28 fraud cases in testing (small-amount refund-abuse and low-signal stolen-card patterns, ₹250-3,000 each) were not caught — these transactions closely resemble ordinary legitimate activity across every engineered feature, with model confidence scores below 0.05. Two policy-layer safety-net rules were tested to catch these cases (amount-only threshold, then amount+behavioral-flag combination); both were rejected after testing because they reduced net business benefit — each false positive prevented cost more in added friction than the additional fraud caught was worth. This is treated as a genuine model-recall gap requiring better training signal (e.g. a dedicated low-amount-fraud feature or more training examples of this pattern), not a policy-layer fix, and is disclosed here rather than papered over with a rule that looks protective but isn't.
+
+Assumptions used for prevention/friction rates:
+- Block prevents 100% of fraud amount, Hold 80%, OTP Verify 70%
+- False-positive friction: Block 100%, Hold 15%, OTP Verify 3% of transaction value lost
+- Extrapolated from 1398 test transactions to 100,000 at the same ~2% fraud rate
+- Illustrative estimates on synthetic data, not claims about real-world fraud rates.

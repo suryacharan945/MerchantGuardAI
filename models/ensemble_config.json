@@ -1,0 +1,6 @@
+{
+  "lgb_weight": 0.95,
+  "novelty_weight": 0.050000000000000044,
+  "novelty_combination": "mean of min-max normalized AE + IsolationForest scores",
+  "rationale": "AE and IsolationForest are 0.93 rank-correlated \u2014 combined into one novelty signal to avoid double-weighting a shared signal against the independently-informed supervised model."
+}

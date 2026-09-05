@@ -1,0 +1,16 @@
+{
+  "step": "04d_threshold_and_feature_diagnostic",
+  "timestamp": "2026-08-24 20:15",
+  "problem_1": "Fixed 0.5 threshold produced zero predictions (not even false positives) despite good ranking (precision@10=0.9). Root cause: early stopping at round 6 on a noisy 28-positive validation set, compressing output probabilities.",
+  "fix_1": "Added PR-curve-based optimal threshold selection instead of fixed 0.5.",
+  "optimal_threshold_metrics": {
+    "optimal_threshold": 0.3187209510600681,
+    "precision_at_optimal": 0.8095238095238095,
+    "recall_at_optimal": 0.6071428571428571,
+    "f1_at_optimal": 0.6938775509714287,
+    "tp": 17,
+    "fp": 4,
+    "fn": 11
+  },
+  "problem_2_check": "device_tx_count_1h: 6 card-testing rows landed in test split \u2014 likely a small-sample test-set SHAP artifact, not a computation bug."
+}

@@ -1,0 +1,16 @@
+{
+  "step": "04b_generator_leakage_fix",
+  "timestamp": "2026-08-24 20:14",
+  "problem": "v2 generator hardcoded country/payment_method per fraud type, letting the model shortcut on those instead of behavioral features. Explanations were repetitive across all flagged transactions.",
+  "fix": "v3 decorrelates country/payment_method from fraud label \u2014 both drawn from the same distribution for legit and fraud rows. Fraud is now separable only via amount ratio, device novelty, velocity, and timing.",
+  "auroc_v2_vs_v3": {
+    "v2": 0.9825,
+    "v3": 0.9263816475495308
+  },
+  "shap_top3_v3": [
+    "amount",
+    "avg_amount_30d",
+    "payment_method_code"
+  ],
+  "fix_confirmed": false
+}

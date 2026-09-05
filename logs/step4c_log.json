@@ -1,0 +1,12 @@
+{
+  "step": "04c_velocity_feature_fix",
+  "timestamp": "2026-08-24 20:15",
+  "problem": "prev_tx_count_24h is user-level only; card-testing fraud (one device, many different users, tight burst) was structurally invisible to the model \u2014 no engineered feature captured device- or merchant-level burst.",
+  "fix": "Added device_tx_count_1h and merchant_tx_count_1h (rolling 1h window, device/merchant-scoped). No change to existing features.",
+  "device_feature_shap_rank": 16,
+  "auroc_v3_vs_v3b": {
+    "v3": 0.9264,
+    "v3b": 0.9241266944734098
+  },
+  "prior_diagnostic_correction": "Step 4b's 'STILL LEAKING' verdict was a false positive from an overly strict threshold in the check logic itself, not an actual data problem \u2014 amount already dominated 3x over the next feature in v3."
+}

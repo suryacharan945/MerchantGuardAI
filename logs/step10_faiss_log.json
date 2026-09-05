@@ -1,0 +1,8 @@
+{
+  "step": "10_faiss_similarity_search",
+  "timestamp": "2026-08-24 21:07",
+  "index_type": "FAISS IndexFlatL2, fraud-only cases",
+  "n_fraud_cases_indexed": 140,
+  "dimension": 16,
+  "validation_note": "Nearest-neighbor check on known card_testing/high_amount query cases \u2014 see printed output for whether matches were type-consistent."
+}

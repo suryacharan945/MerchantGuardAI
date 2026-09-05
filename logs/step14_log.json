@@ -1,0 +1,18 @@
+{
+  "step": "14_temporal_split_and_validation_hardening",
+  "timestamp": "2026-09-03 12:55",
+  "temporal_split_cutoff": "2026-08-31 09:49:00",
+  "temporal_test_fraud_rate": 0.015736766809728183,
+  "optimal_threshold": 0.59,
+  "bootstrap_auroc_mean": 0.9180366383312007,
+  "bootstrap_auroc_95ci": [
+    0.8315363600789938,
+    0.987040285826631
+  ],
+  "human_eval_mean_usefulness": 4.550000000000001,
+  "human_eval_95ci": [
+    4.482011219687614,
+    4.617988780312388
+  ],
+  "leakage_fixed": true
+}

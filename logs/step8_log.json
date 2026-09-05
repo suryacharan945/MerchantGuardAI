@@ -1,0 +1,45 @@
+{
+  "step": "08_model_comparison",
+  "timestamp": "2026-08-24 20:17",
+  "comparison_table": [
+    {
+      "model": "Hybrid Ensemble (calibrated)",
+      "auroc": 0.9344629822732012,
+      "pr_auc": 0.6541053695334444,
+      "recall_at_1pct_fpr": 0.6428571428571429,
+      "precision_at_10": 0.9,
+      "precision_at_20": 0.8
+    },
+    {
+      "model": "LightGBM (supervised)",
+      "auroc": 0.9241266944734098,
+      "pr_auc": 0.6520809752353798,
+      "recall_at_1pct_fpr": 0.6428571428571429,
+      "precision_at_10": 0.9,
+      "precision_at_20": 0.8
+    },
+    {
+      "model": "Autoencoder (unsupervised)",
+      "auroc": 0.8375130344108447,
+      "pr_auc": 0.46519652017958524,
+      "recall_at_1pct_fpr": 0.5357142857142857,
+      "precision_at_10": 0.7,
+      "precision_at_20": 0.6
+    },
+    {
+      "model": "IsolationForest (unsupervised)",
+      "auroc": 0.7746871741397289,
+      "pr_auc": 0.060244065660215715,
+      "recall_at_1pct_fpr": 0.0,
+      "precision_at_10": 0.0,
+      "precision_at_20": 0.1
+    }
+  ],
+  "narrative": "On a held-out test set of 1398 transactions (28 fraud), the supervised LightGBM classifier reached 0.9241 AUROC. The hybrid ensemble (LightGBM weighted 0.95 + combined Autoencoder/IsolationForest novelty signal weighted 0.05, calibrated via Platt scaling) reached 0.9345 AUROC \u2014 a modest lift attributable mainly to the small, correlated unsupervised contribution. Given only 28 fraud examples in the test set, this difference is not strongly conclusive on its own; the ensemble's primary value is architectural robustness against fraud patterns unlike the 4 types used to generate this synthetic dataset, which a same-distribution test set cannot fully demonstrate either way.",
+  "artifacts": [
+    "/content/drive/MyDrive/MerchantGuardAI/reports/model_comparison.csv",
+    "/content/drive/MyDrive/MerchantGuardAI/reports/roc_comparison.png",
+    "/content/drive/MyDrive/MerchantGuardAI/reports/pr_comparison.png",
+    "/content/drive/MyDrive/MerchantGuardAI/reports/auroc_bar_chart.png"
+  ]
+}

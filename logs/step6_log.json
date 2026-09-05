@@ -1,0 +1,27 @@
+{
+  "step": "06_isolation_forest",
+  "timestamp": "2026-08-24 20:16",
+  "trained_on": "5480 legit-only rows",
+  "contamination": 0.02,
+  "auroc_isolation_forest": 0.7746871741397289,
+  "auroc_autoencoder": 0.8375130344108447,
+  "auroc_lightgbm": 0.9241266944734098,
+  "model_rank_correlation": {
+    "lightgbm": {
+      "lightgbm": 1.0,
+      "autoencoder": 0.19507037967421093,
+      "isolation_forest": 0.2069825153769509
+    },
+    "autoencoder": {
+      "lightgbm": 0.19507037967421093,
+      "autoencoder": 1.0,
+      "isolation_forest": 0.9291295607192422
+    },
+    "isolation_forest": {
+      "lightgbm": 0.2069825153769509,
+      "autoencoder": 0.9291295607192422,
+      "isolation_forest": 1.0
+    }
+  },
+  "avg_pairwise_correlation": 0.4437274852568014
+}

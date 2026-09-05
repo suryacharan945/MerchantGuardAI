@@ -1,0 +1,19 @@
+{
+  "step": "08f_critical_single_transaction_scoring_bug",
+  "timestamp": "2026-09-02 19:45",
+  "severity": "CRITICAL \u2014 would have silently broken the live Streamlit demo",
+  "bug": "normalize_scores() computed min/max from the INPUT ARRAY ITSELF. For batch evaluation (1398 rows) this is fine. For single-transaction scoring (any live/manual check), min==max for a 1-element array by definition, forcing normalized score to ALWAYS be 0.0 regardless of the actual raw score. Every live transaction check would have shown the same near-minimum risk score no matter what was entered.",
+  "how_found": "3 adversarial stress-test scenarios (tiny burst payments, device spoofing, Rs.25000 spike) all returned the IDENTICAL score 0.0024 \u2014 an impossible coincidence that revealed the bug.",
+  "fix": "Compute fixed normalization bounds (min, 99.5th percentile) once from the TRAINING distribution, persist to normalization_bounds.json, and require them for any single-transaction or small-batch scoring. Batch bounds only used when explicitly omitted (full-set evaluation).",
+  "validation": {
+    "test_set_auroc_before_fix": 0.9345,
+    "test_set_auroc_after_fix": 0.9345933263816475,
+    "stress_test_scores_before_fix": "0.0024, 0.0024, 0.0024 (identical)",
+    "stress_test_scores_after_fix": [
+      0.9931172296178349,
+      0.9925635629783326,
+      0.9761987527752444
+    ]
+  },
+  "action_required": "app/streamlit_app.py's score_transaction() function MUST be updated to load normalization_bounds.json and pass bounds= into ensemble_score() \u2014 otherwise the live demo has this exact bug."
+}

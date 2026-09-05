@@ -1,0 +1,10 @@
+{
+  "step": "09_policy_knowledge_base_and_faiss",
+  "timestamp": "2026-09-03 12:39",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "vector_index_type": "IndexFlatIP (Cosine Similarity)",
+  "documents_indexed": 6,
+  "corpus_path": "/content/drive/MyDrive/MerchantGuardAI/data/knowledge_base/policy_corpus.json",
+  "index_path": "/content/drive/MyDrive/MerchantGuardAI/models/policy_faiss.index",
+  "metadata_path": "/content/drive/MyDrive/MerchantGuardAI/models/policy_metadata.json"
+}

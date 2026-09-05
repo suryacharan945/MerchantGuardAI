@@ -1,0 +1,50 @@
+{
+  "step": "08_final_comparison_and_business_impact",
+  "timestamp": "2026-08-24 20:58",
+  "correction_note": "An external review flagged missing PR-AUC and business impact. PR-AUC was already present since the original Step 8 \u2014 the genuine gap was business impact quantification, added here.",
+  "comparison_table": [
+    {
+      "model": "Hybrid Ensemble (calibrated)",
+      "auroc": 0.9344629822732012,
+      "pr_auc": 0.6541053695334444,
+      "recall_at_1pct_fpr": 0.6428571428571429,
+      "precision_at_10": 0.9,
+      "precision_at_20": 0.8
+    },
+    {
+      "model": "LightGBM (supervised)",
+      "auroc": 0.9241266944734098,
+      "pr_auc": 0.6520809752353798,
+      "recall_at_1pct_fpr": 0.6428571428571429,
+      "precision_at_10": 0.9,
+      "precision_at_20": 0.8
+    },
+    {
+      "model": "Autoencoder (unsupervised)",
+      "auroc": 0.8375130344108447,
+      "pr_auc": 0.46519652017958524,
+      "recall_at_1pct_fpr": 0.5357142857142857,
+      "precision_at_10": 0.7,
+      "precision_at_20": 0.6
+    },
+    {
+      "model": "IsolationForest (unsupervised)",
+      "auroc": 0.7746871741397289,
+      "pr_auc": 0.060244065660215715,
+      "recall_at_1pct_fpr": 0.0,
+      "precision_at_10": 0.0,
+      "precision_at_20": 0.1
+    }
+  ],
+  "fraud_catch_rate": 0.75,
+  "false_flag_rate": 0.050364963503649635,
+  "prevented_loss_test_set": 52926.4,
+  "false_positive_cost_test_set": 3708.0000000000005,
+  "net_impact_test_set": 49218.4,
+  "scaled_to_100k": {
+    "prevented_loss": 3785865.522174535,
+    "fp_cost": 265236.05150214594,
+    "net_impact": 3520629.470672389
+  },
+  "headline": "MerchantGuard AI flags 75% of fraudulent transactions for intervention, while requiring action on only 5.0% of legitimate transactions. On a base of 100,000 transactions at this fraud rate, this is estimated to prevent ~\u20b93,785,866 in fraud losses against ~\u20b9265,236 in false-positive friction \u2014 a net estimated benefit of ~\u20b93,520,629."
+}

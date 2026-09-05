@@ -1,0 +1,27 @@
+{
+  "step": "08e_adversarial_stress_test",
+  "timestamp": "2026-09-02 14:51",
+  "scenarios_tested": [
+    "Burst card-testing (device velocity spike)",
+    "Device spoofing (many devices, one user, fast)",
+    "High-amount single spike"
+  ],
+  "results": [
+    {
+      "scenario": "Burst card-testing (device velocity spike)",
+      "calibrated_score": 0.002391276185986624,
+      "severity": "Low"
+    },
+    {
+      "scenario": "Device spoofing (many devices, one user, fast)",
+      "calibrated_score": 0.002391276185986624,
+      "severity": "Low"
+    },
+    {
+      "scenario": "High-amount single spike",
+      "calibrated_score": 0.002391276185986624,
+      "severity": "Low"
+    }
+  ],
+  "n_flagged_above_low": 0
+}

@@ -1,0 +1,38 @@
+{
+  "step": "09b_severity_threshold_fix",
+  "timestamp": "2026-08-24 21:40",
+  "thresholds": {
+    "low_medium": 0.071,
+    "medium_high": 0.89,
+    "high_critical": 0.988
+  },
+  "derivation_method": "low_medium=95th pctile legit; medium_high=F1-optimal calibrated threshold; high_critical=75th pctile of fraud scores, bounded to [medium_high+0.02, 0.99]",
+  "bucket_summary": [
+    {
+      "severity": "Low",
+      "count": 1308,
+      "fraud_count": 7,
+      "fraud_rate": 0.005351681957186544
+    },
+    {
+      "severity": "Medium",
+      "count": 67,
+      "fraud_count": 3,
+      "fraud_rate": 0.04477611940298507
+    },
+    {
+      "severity": "High",
+      "count": 15,
+      "fraud_count": 11,
+      "fraud_rate": 0.7333333333333333
+    },
+    {
+      "severity": "Critical",
+      "count": 8,
+      "fraud_count": 7,
+      "fraud_rate": 0.875
+    }
+  ],
+  "monotonic_fraud_rate": true,
+  "prior_bug": "v1 used medium_high+0.15 unbounded, producing an unreachable 1.04 threshold since calibrated scores are capped at 1.0. Fixed with a percentile-of-fraud-scores anchor and an explicit 0.99 cap."
+}

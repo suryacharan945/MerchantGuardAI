@@ -1,0 +1,15 @@
+feature,importance
+ip_country_code,57620.113437622786
+payment_method_code,56646.10431814194
+amount,22359.84595423937
+amount_vs_avg_ratio,4682.102943480015
+merchant_id_code,4017.9589104652405
+time_since_last_tx_min,3919.963618993759
+avg_amount_30d,3602.014294832945
+hour,3132.5499174892902
+day_of_week,2877.391121327877
+merchant_category_code,2342.7749721705914
+ip_country_mismatch,261.98645997047424
+user_device_nunique,179.0261390209198
+prev_tx_count_24h,29.462589502334595
+is_off_hours,17.65727150440216

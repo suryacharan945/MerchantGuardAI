@@ -1,0 +1,66 @@
+{
+  "step": "04_shap_explainability",
+  "timestamp": "2026-08-24 20:14",
+  "shap_global_importance": [
+    {
+      "feature": "payment_method_code",
+      "mean_abs_shap": 0.46406165253875375
+    },
+    {
+      "feature": "ip_country_code",
+      "mean_abs_shap": 0.4059290639205258
+    },
+    {
+      "feature": "amount",
+      "mean_abs_shap": 0.2548476114546023
+    },
+    {
+      "feature": "ip_country_mismatch",
+      "mean_abs_shap": 0.1173306815500119
+    },
+    {
+      "feature": "avg_amount_30d",
+      "mean_abs_shap": 0.10427852182308285
+    },
+    {
+      "feature": "time_since_last_tx_min",
+      "mean_abs_shap": 0.06274357517611415
+    },
+    {
+      "feature": "hour",
+      "mean_abs_shap": 0.061381502690426804
+    },
+    {
+      "feature": "day_of_week",
+      "mean_abs_shap": 0.0568683569811219
+    },
+    {
+      "feature": "merchant_category_code",
+      "mean_abs_shap": 0.039524091186520026
+    },
+    {
+      "feature": "amount_vs_avg_ratio",
+      "mean_abs_shap": 0.028387010713999974
+    },
+    {
+      "feature": "merchant_id_code",
+      "mean_abs_shap": 0.020723534538689373
+    },
+    {
+      "feature": "user_device_nunique",
+      "mean_abs_shap": 0.008957187071593868
+    },
+    {
+      "feature": "is_off_hours",
+      "mean_abs_shap": 0.0009002372190360696
+    },
+    {
+      "feature": "prev_tx_count_24h",
+      "mean_abs_shap": 6.750152343848314e-05
+    }
+  ],
+  "leakage_diagnostic_flagged": true,
+  "top_feature": "payment_method_code",
+  "note": "Top SHAP feature is a raw categorical (country/payment_method), suggesting the synthetic generator's fraud-type templates are separable on those fields rather than purely behavioral signals. Documented as a known limitation; does not affect the demo's explanatory value but should be disclosed to judges as a synthetic-data artifact, not a claim about real-world fraud patterns.",
+  "n_explanations_generated": 10
+}

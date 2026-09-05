@@ -1,0 +1,13 @@
+{
+  "step": "05_autoencoder",
+  "timestamp": "2026-08-24 20:16",
+  "trained_on": "5480 legit-only rows",
+  "architecture": "input_dim=16 -> 12 -> 8 -> bottleneck(4) -> 8 -> 12 -> input_dim",
+  "epochs": 100,
+  "final_train_loss": null,
+  "auroc_reconstruction_error": 0.8375130344108447,
+  "fraud_mean_error": 46.48280715942383,
+  "legit_mean_error": 0.9930353760719299,
+  "separation_ratio": 46.80881118774414,
+  "device_used": "cuda"
+}

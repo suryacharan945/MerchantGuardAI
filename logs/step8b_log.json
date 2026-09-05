@@ -1,0 +1,40 @@
+{
+  "step": "08b_severity_value_diagnostic_and_safety_net",
+  "timestamp": "2026-08-24 21:01",
+  "problem": "Block (highest-severity action) prevented far less rupee value per case (~\u20b9437) than Hold (~\u20b94,387) \u2014 the model's ensemble score rewards multi-signal fraud (card-testing, stolen-card) over single-signal high-amount fraud, so the highest-value fraud type wasn't reliably reaching the strongest gate.",
+  "fraud_type_breakdown": [
+    {
+      "fraud_type_est": "stolen_card",
+      "count": 11,
+      "avg_amount": 3822.7272727272725,
+      "total_amount": 42050,
+      "avg_severity_score": 0.43353119815574365
+    },
+    {
+      "fraud_type_est": "refund_abuse",
+      "count": 8,
+      "avg_amount": 3800.0,
+      "total_amount": 30400,
+      "avg_severity_score": 0.6291406345719963
+    },
+    {
+      "fraud_type_est": "card_testing",
+      "count": 9,
+      "avg_amount": 9.0,
+      "total_amount": 81,
+      "avg_severity_score": 0.9815501104333229
+    }
+  ],
+  "fix": "Added a deterministic safety-net rule: transactions above the 99th percentile of legit amounts get a minimum Hold action regardless of model score. Explicit, auditable business rule layered on the model.",
+  "large_amount_threshold": 3600.0,
+  "n_safety_net_triggered": 14,
+  "impact_before": {
+    "prevented": 52926.4,
+    "fp_cost": 3708.0000000000005
+  },
+  "impact_after": {
+    "prevented": 52926.4,
+    "fp_cost": 11411.070000000002
+  },
+  "note_on_heuristic": "fraud_type_est is reconstructed post-hoc from device prefix, chargeback flag, and amount ratio, since fraud type wasn't stored as an explicit generator column. Accurate for card_testing/refund_abuse; high_amount vs stolen_card split is approximate."
+}

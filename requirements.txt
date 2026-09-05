@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+scikit-learn
+lightgbm
+joblib
+plotly
+matplotlib
+faiss-cpu
+sentence-transformers
+shap
+google-genai

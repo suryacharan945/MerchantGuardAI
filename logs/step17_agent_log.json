@@ -1,0 +1,11 @@
+{
+  "step": "17_agent_orchestration_benchmark",
+  "timestamp": "2026-09-03 13:11",
+  "transactions_audited": 1398,
+  "autonomous_resolution_rate_pct": 94.78,
+  "human_handoff_rate_pct": 5.22,
+  "agent_fraud_catch_rate_pct": 100.0,
+  "active_learning_queue_size": 70,
+  "mean_latency_ms": 0.03,
+  "ops_hours_saved": 99.38
+}

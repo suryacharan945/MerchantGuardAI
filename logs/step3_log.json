@@ -1,0 +1,41 @@
+{
+  "step": "03_lightgbm_baseline",
+  "timestamp": "2026-08-24 20:13",
+  "params": {
+    "objective": "binary",
+    "metric": "auc",
+    "verbosity": -1,
+    "boosting_type": "gbdt",
+    "num_leaves": 31,
+    "learning_rate": 0.05,
+    "scale_pos_weight": 52.64705882352941,
+    "min_child_samples": 10,
+    "seed": 42
+  },
+  "metrics": {
+    "auroc": 0.9825174825174825,
+    "precision_at_10": 1.0,
+    "precision_at_20": 0.75,
+    "recall_at_1pct_fpr": 0.7307692307692307,
+    "achieved_fpr": 0.009687034277198211,
+    "precision_default_threshold": 0.7894736842105263,
+    "recall_default_threshold": 0.5769230769230769,
+    "f1_default_threshold": 0.6666666666666666,
+    "false_positives_per_1000": 2.923976608187134,
+    "confusion_matrix": [
+      [
+        1338,
+        4
+      ],
+      [
+        11,
+        15
+      ]
+    ],
+    "n_test_fraud": 26,
+    "k_values_used": [
+      10,
+      20
+    ]
+  }
+}

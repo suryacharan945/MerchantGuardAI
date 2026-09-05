@@ -1,0 +1,36 @@
+{
+  "step": "08d_revert_and_document_limitation",
+  "timestamp": "2026-08-24 21:04",
+  "decision": "Reverted to original policy (no amount-based safety net) as canonical. Both v1 and v2 safety-net attempts reduced net business benefit when actually measured, despite v2 superficially 'catching more fraud'.",
+  "comparison": [
+    {
+      "version": "No safety net (original)",
+      "prevented": 52926,
+      "fp_cost": 3708,
+      "net": 49218,
+      "triggers": 0,
+      "net_vs_original": 0
+    },
+    {
+      "version": "Safety net v1 (amount-only, 99th pct)",
+      "prevented": 52926,
+      "fp_cost": 11411,
+      "net": 41515,
+      "triggers": 14,
+      "net_vs_original": -7703
+    },
+    {
+      "version": "Safety net v2 (amount+flag, 75th pct)",
+      "prevented": 54326,
+      "fp_cost": 15791,
+      "net": 38535,
+      "triggers": 205,
+      "net_vs_original": -10683
+    }
+  ],
+  "canonical_net_benefit_test_set": 49218,
+  "canonical_net_benefit_scaled_100k": 3520600.8583690985,
+  "fraud_catch_rate": 0.75,
+  "false_flag_rate": 0.050364963503649635,
+  "limitation_documented": "/content/drive/MyDrive/MerchantGuardAI/docs/known_limitations.md"
+}

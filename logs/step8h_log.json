@@ -1,0 +1,18 @@
+{
+  "step": "08h_bootstrap_confidence_intervals",
+  "timestamp": "2026-09-02 19:57",
+  "n_bootstrap_resamples": 1000,
+  "n_valid_resamples": 1000,
+  "n_test_fraud_cases": 28,
+  "auroc": {
+    "point_estimate": 0.9344629822732012,
+    "ci_95_low": 0.8796951110369607,
+    "ci_95_high": 0.9789353429819854
+  },
+  "pr_auc": {
+    "point_estimate": 0.6541053695334444,
+    "ci_95_low": 0.45047872685220736,
+    "ci_95_high": 0.8247476404563011
+  },
+  "honest_note": "With only 28 fraud cases in the test set, metric estimates carry real uncertainty (95% CI width ~0.099 for AUROC). Point estimates are reported alongside these intervals rather than presented as exact, to avoid overstating precision a small test set cannot support."
+}

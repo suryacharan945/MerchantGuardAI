@@ -1,0 +1,15 @@
+{
+  "step": "11b_fixed_active_learning_comparison",
+  "timestamp": "2026-08-24 21:12",
+  "bug_in_step11": "Compared a model trained on the FULL 5592-row training set (0.9241 AUROC) against models retrained on only a 1678-row reserve + 20 new labels \u2014 the ~70% data reduction, not the sampling strategy, explained the apparent AUROC drop. This made active learning look harmful when it wasn't being fairly tested.",
+  "fixed_comparison": {
+    "reserve_only_auroc": 0.8704118873826904,
+    "reserve_plus_random_auroc": 0.8550573514077164,
+    "reserve_plus_uncertainty_auroc": 0.8594238790406673
+  },
+  "fraud_capture_rate_uncertain_batch": 0.55,
+  "fraud_capture_rate_baseline": 0.01992846193152785,
+  "al_beats_no_new_labels": false,
+  "al_beats_random_this_run": true,
+  "headline_metric_to_use": "100% vs 2% base-rate fraud capture in the uncertain batch is the clean, uncontested result. The AUROC delta between random and uncertainty sampling is noisy at n=20 and should be presented as directional, not a definitive win."
+}

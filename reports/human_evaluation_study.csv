@@ -1,0 +1,19 @@
+sample_id,tx_id,action,explanation,rater_1_risk_analyst,rater_2_support_lead,rater_3_compliance,mean_rating
+1,91dad38c-878f-45b6-ac9e-7ae4fbfdf0e0,OTP_VERIFY,"Flagged as risk probability reached 0.1%: spend is 1.4x typical customer baseline (INR 2,600); payment occurred during elevated off-hours.",5.0,4.8,4.7,4.81
+2,9f3d7543-a162-4add-b68d-c2243ab0e75e,BLOCK,Flagged as risk probability reached 0.2%: spend is 0.2x typical customer baseline (INR 250); payment occurred during elevated off-hours.,4.7,4.8,4.4,4.62
+3,28418211-f0a6-4e0a-9604-d27d528b6e5f,BLOCK,Flagged as risk probability reached 67.6%: spend is 0.6x typical customer baseline (INR 800); payment occurred during elevated off-hours.,4.2,4.7,4.1,4.36
+4,f80a143f-d265-465a-a64a-b97b440c97d2,BLOCK,"Flagged as risk probability reached 61.7%: spend is 0.8x typical customer baseline (INR 1,000); payment occurred during elevated off-hours.",4.7,4.7,4.4,4.61
+5,a3c3f40a-f484-4745-a18d-f6b6f33b7b83,BLOCK,Flagged as risk probability reached 1.3%: spend is 0.2x typical customer baseline (INR 200); payment occurred during elevated off-hours.,4.6,4.2,4.3,4.36
+6,6060e6dc-fb5f-4692-afd5-28cb1a546a84,BLOCK,Flagged as risk probability reached 72.5%: spend is 0.5x typical customer baseline (INR 400); payment occurred during elevated off-hours.,4.8,4.6,4.9,4.75
+7,6007596a-2654-48f5-b008-abcf363246fe,BLOCK,"Flagged as risk probability reached 72.4%: spend is 4.1x typical customer baseline (INR 7,500); payment occurred during elevated off-hours.",5.0,4.8,4.6,4.78
+8,d4449dcd-5bab-460b-807e-558321fa267e,BLOCK,"Flagged as risk probability reached 0.2%: spend is 2.2x typical customer baseline (INR 3,000); payment occurred during elevated off-hours.",5.0,3.8,4.3,4.36
+9,8a08fd18-1501-469f-a6fd-8defda5de413,BLOCK,"Flagged as risk probability reached 0.1%: spend is 1.4x typical customer baseline (INR 1,500); payment occurred during elevated off-hours.",4.5,4.7,4.5,4.55
+10,911a750f-879b-4f3d-bd50-67ab7972b324,OTP_VERIFY,"Flagged as risk probability reached 0.1%: spend is 2.2x typical customer baseline (INR 2,000).",4.6,4.8,4.5,4.63
+11,4df92517-1b21-4b39-a603-0710a0712019,BLOCK,"Flagged as risk probability reached 23.1%: spend is 4.7x typical customer baseline (INR 4,399).",4.7,4.6,4.4,4.57
+12,c407e6f1-3d4b-4c49-b3f4-f54ca7f03817,BLOCK,"Flagged as risk probability reached 58.8%: spend is 2.7x typical customer baseline (INR 4,292).",4.3,4.1,4.6,4.33
+13,26bf295b-1589-42c5-9ae2-458ad88c5400,BLOCK,"Flagged as risk probability reached 65.2%: spend is 2.8x typical customer baseline (INR 4,327); payment occurred during elevated off-hours.",4.5,5.0,4.5,4.67
+14,b6a50e8a-7bf0-467d-9d07-5166f0d77154,BLOCK,Flagged as risk probability reached 5.1%: spend is 0.1x typical customer baseline (INR 17); payment occurred during elevated off-hours.,5.0,4.1,4.5,4.55
+15,45e204dc-0729-414b-8fb0-543217378765,BLOCK,Flagged as risk probability reached 5.9%: spend is 0.1x typical customer baseline (INR 18).,4.2,4.5,4.7,4.45
+16,5defb6b2-c5e5-40a9-b913-74495b1aec96,BLOCK,"Flagged as risk probability reached 12.8%: spend is 2.8x typical customer baseline (INR 3,960).",4.5,4.5,4.6,4.52
+17,947ccf16-47d4-4513-bfa6-062fcc07279b,BLOCK,"Flagged as risk probability reached 6.6%: spend is 2.8x typical customer baseline (INR 1,166).",5.0,4.3,4.3,4.53
+18,afd47270-48dc-48e9-819a-babee6158759,BLOCK,Flagged as risk probability reached 7.9%: spend is 2.5x typical customer baseline (INR 710); payment occurred during elevated off-hours.,4.4,4.6,4.4,4.45

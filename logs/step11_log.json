@@ -1,0 +1,11 @@
+{
+  "step": "11_dual_mode_llm_generator",
+  "timestamp": "2026-09-03 12:42",
+  "generator_mode": "offline_fallback",
+  "evaluated_samples": 5,
+  "mean_latency_ms": 0.064,
+  "actions_assigned": {
+    "BLOCK": 5
+  },
+  "output_file": "/content/drive/MyDrive/MerchantGuardAI/reports/llm_generated_explanations.json"
+}

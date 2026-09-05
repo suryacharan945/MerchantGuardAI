@@ -1,0 +1,4 @@
+scenario,calibrated_score,severity
+Burst card-testing (device velocity spike),0.9931172296178349,Critical
+"Device spoofing (many devices, one user, fast)",0.9925635629783326,Critical
+High-amount single spike,0.9761987527752444,High

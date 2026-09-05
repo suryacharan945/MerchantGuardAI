@@ -1,0 +1,8 @@
+{
+  "recommended_action": "BLOCK",
+  "sms_template": "Razorpay Security Alert: Transaction of INR 1,033 at m_07 (Ref: b81a6b31) was declined due to unusual activity. If this was you, visit rzp.io/sec to verify your card.",
+  "email_template": {
+    "subject": "Security Alert: Transaction Declined at m_07 (Ref: b81a6b31)",
+    "body": "Dear Customer,\n\nA payment of INR 1,033.00 attempted at m_07 was declined by our automated fraud detection system to protect your account against unauthorized transactions.\n\nIf you did not initiate this transaction, please reach out to your card-issuing bank immediately to secure your instrument. If this was authorized by you, please complete one-time identity verification here: https://merchantguard.razorpay.com/verify/b81a6b31.\n\nRegards,\nMerchant Risk & Fraud Security Team"
+  }
+}

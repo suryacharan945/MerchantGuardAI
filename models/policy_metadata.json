@@ -1,0 +1,44 @@
+[
+  {
+    "doc_id": "SOP-HV-001",
+    "category": "high_value_escalation",
+    "title": "High-Value Transaction Security SOP",
+    "action_rule": "HOLD_OR_OTP",
+    "text": "Transactions with amounts exceeding 3x the merchant baseline or higher than INR 5,000 must not be allowed automatically without verification. If the transaction occurs during off-hours or from a new device, enforce an immediate Hold for manual fraud desk review. If originating from a recognized device with valid credentials, challenge the customer with OTP Verification before approval."
+  },
+  {
+    "doc_id": "SOP-CT-002",
+    "category": "card_testing",
+    "title": "Card Testing & Velocity Abuse Remediation",
+    "action_rule": "BLOCK",
+    "text": "When a single device fingerprint generates multiple rapid low-value transactions (typically below INR 50) across different user identifiers or card BINs within a 1-hour rolling window, this represents automated card-testing fraud. System policy mandates an immediate Block on the device fingerprint and rejection of the transaction to prevent gateway fee penalties and merchant account suspension."
+  },
+  {
+    "doc_id": "SOP-SC-003",
+    "category": "stolen_card",
+    "title": "Stolen Instrument & Device Mismatch SOP",
+    "action_rule": "HOLD",
+    "text": "A sudden shift in transaction device fingerprint accompanied by an uncharacteristic transaction amount (2x to 5x historical average) indicates a compromised card credential. Transactions triggering both device novelty and amount ratio spikes must be placed on Hold. Merchant support must verify customer possession prior to order dispatch to avoid dispute liability under Visa and Mastercard zero-liability rules."
+  },
+  {
+    "doc_id": "SOP-RA-004",
+    "category": "refund_abuse",
+    "title": "Chargeback & Refund Abuse Mitigation Protocol",
+    "action_rule": "HOLD",
+    "text": "Accounts showing previous chargeback flags or repeated dispute filings attempting transactions via instant settlement rails (such as UPI) must be gated. If an off-hours transaction is flagged with chargeback history, place the settlement on Hold pending merchant ledger reconciliation to prevent double-refund exploitation."
+  },
+  {
+    "doc_id": "SOP-IP-005",
+    "category": "geo_mismatch",
+    "title": "Cross-Border & IP Anomaly Protocol",
+    "action_rule": "OTP_VERIFY",
+    "text": "Transactions originating from an IP country that deviates from the user home country registration present elevated risk. If the spending amount conforms to the user historical 30-day average and no velocity alerts exist, require mandatory two-factor OTP verification rather than a hard block to minimize friction for legitimate traveling customers."
+  },
+  {
+    "doc_id": "SOP-LG-006",
+    "category": "legitimate_baseline",
+    "title": "Standard Low-Risk Clearance Rules",
+    "action_rule": "ALLOW",
+    "text": "Transactions within 1.5x of the 30-day average amount originating from a known device fingerprint during standard operational hours carry a low risk profile. These transactions must be designated Allow immediately to maximize merchant conversion rates and preserve payment funnel performance."
+  }
+]
