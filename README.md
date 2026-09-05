@@ -1,5 +1,7 @@
 # MerchantGuard AI
 
+[Launch the live Streamlit app](https://merchantguardai.streamlit.app/)
+
 MerchantGuard AI is an autonomous payment-interception and fraud-investigation platform for merchants. It combines calibrated machine-learning risk scoring, behavioral anomaly detection, policy retrieval, explainability, and an auditable action layer in a Streamlit dashboard.
 
 ## What It Does
