@@ -1,8 +1,12 @@
 # MerchantGuard AI
 
-🔗 Live Demo: https://merchantguardai.streamlit.app/
+[![MerchantGuardAI CI](https://github.com/suryacharan945/MerchantGuardAI/actions/workflows/ci.yml/badge.svg)](https://github.com/suryacharan945/MerchantGuardAI/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B)](https://merchantguardai.streamlit.app/)
 
-MerchantGuard AI is an autonomous payment-interception and fraud-investigation platform for merchants. It combines calibrated machine-learning risk scoring, behavioral anomaly detection, policy retrieval, explainability, and an auditable action layer in a Streamlit dashboard.
+🔗 **Live Demo:** [https://merchantguardai.streamlit.app/](https://merchantguardai.streamlit.app/)
+
+MerchantGuard AI is an autonomous payment-interception and fraud-investigation platform for merchants. It combines calibrated machine-learning risk scoring, behavioral anomaly detection, policy retrieval, explainability, and an auditable action layer in an interactive Streamlit dashboard.
 
 ## What It Does
 
@@ -24,13 +28,13 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-Run the integrity smoke test:
+Run the pipeline unit tests:
 
 ```powershell
-python smoke_test.py
+python -m unittest discover tests
 ```
 
-Start the dashboard:
+Start the Streamlit dashboard:
 
 ```powershell
 streamlit run app.py
@@ -59,20 +63,17 @@ models/                Trained models, calibrators, and vector indexes
 reports/               Evaluation results, audit data, and generated reports
 logs/                  Experiment and validation logs
 docs/                  Project documentation and known limitations
+tests/                 Automated pipeline and policy unit tests
 smoke_test.py          End-to-end integrity check
 requirements.txt       Python dependencies
 ```
 
-## Validation
+## Validation & Evaluation
 
-The smoke test verifies dataset loading, model and calibration artifacts, inference, policy retrieval, and SQLite audit persistence. The project also contains evaluation reports and experiment logs under `reports/` and `logs/`.
+The test suite (`tests/`) verifies feature columns, score normalization, Platt calibration logic, and automated action mappings. The smoke test verifies dataset loading, model and calibration artifacts, inference, policy retrieval, and SQLite audit persistence.
 
 Known model limitations, including missed low-signal fraud and calibration overconfidence at the highest score range, are documented in [`docs/known_limitations.md`](docs/known_limitations.md).
 
-## Data and Large Files
-
-Large datasets and model artifacts are stored with Git LFS. Install Git LFS and run `git lfs pull` after cloning if the working tree contains LFS pointer files.
-
 ## License
 
-No license has been specified for this project yet.
+This project is licensed under the [MIT License](LICENSE).
